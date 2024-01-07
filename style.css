@@ -1,0 +1,73 @@
+/*  --------------- Box Sizing -----------------  */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*  --------------- Utility Classes -----------------  */
+
+.container {
+  width: 80vw;
+  max-width: 960px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "head head"
+    "search result";
+}
+
+.search {
+  grid-area: search;
+}
+
+.result {
+  grid-area: result;
+}
+
+img {
+  width: 360px;
+  border: 5px solid #2e260a;
+  box-shadow: .5px .5px 2px;
+}
+
+/*  --------------- Global Styles -----------------  */
+
+body {
+  font-family: "Playfair Display", serif;
+  background-color: #c2ad78;
+  color: #2e260a;
+}
+
+header {
+  text-align: center;
+  font-size: 24px;
+  border: 5px solid #2e260a;
+  background-color: #fae3a7;
+  grid-area: head;
+}
+
+header h1 {
+  color: #cc0d0d;
+  text-shadow: 0.5px 0.5px #000;
+}
+
+button {
+  display: inline;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 5px;
+  background-color: #c2ad78;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #2e260a;
+  color: #c2ad78;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mason Mohler" />
+    <meta
+      name="description"
+      content="Monster search engine for DnD 5th Edition"
+    />
+    <title>DnD 5e Monster Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container">
+    <header><h1>DnD 5e Monster Search</h1></header>
+    <main class="search">
+      <h2>Enter Monster Name:</h2>
+      <input type="text" id="monsterGet" />
+      <button type="button" id="btnGet" onclick="getMonster()">Search</button>
+    </main>
+    <aside id="result"></aside>
+    <script src="script.js"></script>
+  </body>
+</html>
